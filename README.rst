@@ -5,6 +5,8 @@ This package reads EXIF information in  jpg or tiff images.
 It converts the GPS information into the equivalent
 Google Maps url.
 
+11 June 2018 - Now supports Python 3.
+
 SETUP
 =====
 
@@ -38,7 +40,7 @@ Single Image
 
     image = exifgps.read(image_filename)
     image.process_exif()
-    print image.get_url()
+    print(image.get_url())
 
 Search Directory
 ::
@@ -47,7 +49,7 @@ Search Directory
 
     image_list = exifgps.search(directory)
     for image in image_list:
-        print image.get_url()
-        print image.get_filename()
+        print(image.get_url())
+        print(image.get_filename())
 
 

@@ -146,7 +146,7 @@ class Imagegps(object):
         gps = {}
 
         if os.path.exists(filename) == False:
-            print "Error: Unable to open %s" % filename
+            print("Error: Unable to open %s" % filename)
             return None 
 
         with open(filename, "rb") as fh:
@@ -243,7 +243,7 @@ def read(filename):
 def search(directory):
     image_list = []
     if os.path.exists(directory) == False:
-        print "Error: Unable to open directory %s" % directory
+        print("Error: Unable to open directory %s" % directory)
         return
     for root, dir, files in os.walk(directory):
         for file in files:
